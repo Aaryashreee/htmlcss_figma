@@ -1,39 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> -->
+    <title>figma_assignmnet</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     
-        <nav>
+        <nav class="nav">
                 <div id="logo">
                     <img  class="img" src="img/logo.svg"   >  
                 </div>
           
                 <div class="navitem" >
-                    <a class="head_text"><b> Home </b> <img  class="arrow" src="img/arrow.svg" > </a>
-                    <a class="head_text"><b> Pages </b><img  class="arrow" src="img/arrow.svg" >  </a> 
-                    <a class="head_text"><b> Blog </b><img  class="arrow" src="img/arrow.svg" > </a>
-                    <a class="head_text"> <b> Portfolio </b><img  class="arrow" src="img/arrow.svg" >  </a>
+                    <a class="head_text"> Home  <img  class="arrow" src="img/arrow.svg" > </a>
+                    <a class="head_text"> Pages <img  class="arrow" src="img/arrow.svg" >  </a> 
+                    <a class="head_text"> Blog <img  class="arrow" src="img/arrow.svg" > </a>
+                    <a class="head_text">  Portfolio <img  class="arrow" src="img/arrow.svg" >  </a>
                 </div>
                 <div id="button">
                     <button id="getstarted" style="width:179px;
                     height: 57px;" > Get Started</button>
                 </div>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><img src="img/ham.svg "height=30px></button>
+                    <div id="myDropdown" class="dropdown-content">
+                    <a class="head_text"> Home  <img  class="arrow" src="img/arrow.svg" > </a>
+                    <a class="head_text"> Pages <img  class="arrow" src="img/arrow.svg" >  </a> 
+                    <a class="head_text"> Blog <img  class="arrow" src="img/arrow.svg" > </a>
+                    <a class="head_text">  Portfolio <img  class="arrow" src="img/arrow.svg" >  </a>
+                    </div>
+                </div>
+                <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                      document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                    </script>
         </nav>
  
-    <!-- <br><br><br> -->
-    <div class="text1">
-        <b>Expand your options with a </b><br>
-        <b>subscription  </b>
+    <div class="text1" >
+        Expand your options with a  <br>
+       subscription 
     </div>
-    <BR><br>
     <div class="text2">
         Choose the plan that suits you best! More features will be available thanks to <BR>individual plans.
     </div>
@@ -41,38 +69,35 @@
 
     <div class="row">
         <div class="column">
-            <div class="card1" style="padding: 3rem;">
+            <div class="card1" >
                 <a class="cardtitle">Base</a> 
                 <p class="text">For a small company that wants to show what it's worth.</p>
-                <br>
                 <a class="cardtitle">$300 
-                    <p class="para">Per User / Per Year </p></a> <br>
+                <p class="para">Per User / Per Year </p></a>
                     <div class="list">
-                        <li>Access to editing all blocks</li><br>
-                        <li>Editing blocks together</li><br>
-                        <li>Access to all premium icons</li><br>
-                        <li>A dedicated domain</li><br>
-                        <li>Ability to integrate with CMS</li><br><br>
+                        <li >Access to editing all blocks</li>
+                        <li>Editing blocks together</li>
+                        <li>Access to all premium icons</li>
+                        <li>A dedicated domain</li>
+                        <li>Ability to integrate with CMS</li>
                     </div>
                 <button class="trial">Start 14 Days Free Trial </button>
             </div>
       
         
-            <div class="card2" style="padding: 3rem; margin-right:20rem"  >
+            <div class="card2" >
                 <a class="cardtitle">Ultimate</a>
                 <p class="text">For a large company that wants to achieve maximum returns</p>
-                <br>
                 <a class="cardtitle">$600
                 <p  class="para">Per User / Per Year
-                </p></a><br>
-                <div class="list">
-                
-                    <li>Access to editing all blocks</li><br>
-                    <li>Editing blocks together</li><br>
-                    <li>Access to all premium icons</li><br>
-                    <li>A dedicated domain</li><br>
-                    <li>Ability to integrate with CMS</li><br><br>
-                </div>
+                </p></a>
+                    <div class="list">
+                        <li>Access to editing all blocks</li>
+                        <li>Editing blocks together</li>
+                        <li>Access to all premium icons</li>
+                        <li>A dedicated domain</li>
+                        <li>Ability to integrate with CMS</li>
+                    </div>
                 <button class="trial">Start 14 Days Free Trial </button>
             </div>
         </div>
@@ -123,16 +148,16 @@
 
 
     <footer class="footer-container">
-                <div class="footer-heading footer 0"> 
+                <div class="footer-heading footer-0"> 
                     <h1 class="footer__logo"><img src="img/bw_logo.svg"></h1>
-                              <p>  Move - Multipurpose Design<br>
-                                Template will help you <br>
+                              <p>  Move - Multipurpose Design
+                                Template will help you 
                                 develop your website design.
                               </p>
                             <div  class="flex">
-                                <img src="img/web.svg" style="margin-right:20px">
-                                <img src="img/fb.svg"  style="margin-right:20px">
-                                <img src="img/tw.svg"  style="margin-right:20px">
+                                <img  src="img/web.svg" style="margin-right:10px">
+                                <img src="img/fb.svg"  style="margin-right:10px">
+                                <img src="img/tw.svg"  style="margin-right:10px">
                                 <img src="img/yt.svg">
                             </div>  
                 
