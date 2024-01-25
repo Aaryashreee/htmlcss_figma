@@ -1,19 +1,18 @@
 
 *{
- padding: 0rem;
+ padding: 0;
+ margin: 0;
+ font-family: 'Inter';
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 html , body{
+    /* width: 100%; */
     padding-top: 0;
-    margin: left 1rem;
-    font-family: 'Inter', sans-serif;
-
+    /* font-family: 'Inter';   */
 }
 
-nav {
-     margin-left: 4rem; 
+.nav {
+    margin-left: 4rem; 
     justify-content: space-between;
     display: inline;
     display: flex;
@@ -34,12 +33,8 @@ nav {
 #logo{
     display: flex;
     align-items: center;
-    @media screen and (Max-width: 975px){
-        background-size: 5rem;
-        display: flex;
-        align-items:left;
-    }
 }
+   
 
 .head_text{
     border-left: 0px; 
@@ -51,17 +46,13 @@ nav {
     line-height: 24px; 
     justify-content: space-between;
     margin-right: 15.5px;
-    @media screen and (Max-width: 975px){
-       font-size:small;
-      
-} }
+}
+   
 .arrow{
     width: auto;
     height: fit-content;
     margin-left: 5px;
-    @media screen and (Max-width: 975px){
-            display: none;
-        }
+  
 }
  
 button{
@@ -74,14 +65,10 @@ button{
     margin-top:10px ;
     font-weight: bold;
     
-} 
-#getstarted{
-  
-    @media screen and (Max-width: 975px){
-        display: none;
-    }
 }
-
+.dropdown{
+    display: none;
+}
 
 .text1{
     padding-top: 2rem;
@@ -91,24 +78,16 @@ button{
     letter-spacing: 0px;
     text-align: center;
     color:  rgba(51, 51, 51, 1);
-    @media screen and (Max-width: 975px){
-        font-size: 40px;
-        font-weight: 700;
-        padding-top:0; 
-    }
 }
 
 .text2{
+    padding-top: 2rem;
     font-size: 20px;
     font-weight: 500;
     line-height: 35px;
     letter-spacing: 0px;
     text-align: center;
     color:  rgba(133, 138, 143, 1);
-    @media screen and (Max-width: 975px){
-        font-size: 15px;
-        padding-top:0;
-    }
 }
 
 
@@ -118,10 +97,14 @@ button{
     padding-top: 8% ;
     /* padding: 4rem 4rem 4rem 4rem; */
     page-break-after: always;
-
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+   
 }
 
 .column{
+ 
     width: 25%;
     padding: 0 10px;
     width: 498px;
@@ -129,68 +112,27 @@ button{
     top: 660px;
     left: 205px;
     display: flex;
-    @media screen and (Max-width: 975px) {
-
-          width: fit-content;
-          height: fit-content;
-          display: flex;
-          flex-direction: column;
-    }
+    justify-content: space-evenly;
+    
   
 }
 
-.column >div{
-    @media screen and (Max-width: 975px) {
-          width: fit-content;
-          height: fit-content;
-          display: grid;
-          
-        }
 
-}
-
-.card1{
+.card1 ,.card2{
     margin: 10%;
     width: 90%;
     height: fit-content;
-    padding: 16px;
+    /* padding: 16px; */
     box-shadow:2px;
     background-color: #ffffff; 
     border-radius: 0.5rem;
     border-style:solid;
     box-sizing: content-box;
     border-color: rgb(245, 244, 244);
-    @media screen and (Max-width: 975px){
-        font-size: small;
-        font-weight: 700;
-        padding-top:0;
-        margin-right: 20rem;
-    }
-
- 
-    
+    padding: 3rem; margin-right:20rem" 
 
 }
-.card2{
-    overflow-inline:auto;
-    margin-right :200px;
-    margin: 10%;
-    width: 90%;
-    /* background-color: aqua; */
-    height: fit-content;
-    box-shadow:2px;
-    background-color: #ffffff; 
-    border-radius: 0.5rem;
-    border-style:solid;
-    box-sizing: content-box;
-    border-color: rgb(245, 244, 244);
-    @media screen and (Max-width: 975px){
-        font-size: small;
-        font-weight: 700;
-        padding-top:0;
-    }
 
-}
 
 .card a{
     font-size: 48px;
@@ -198,13 +140,6 @@ button{
     line-height: 58px;
     letter-spacing: 0px;
     text-align: left;
-    @media screen and (Max-width: 975px){
-        font-size: large;
-        font-weight: 700;
-        padding-top:0;
-        padding-left: 0rem;
-    }
-    
 }
 
 .cardtitle{
@@ -241,9 +176,12 @@ button{
 }
 .list{
     padding-top: 3rem;
-    list-style-image: url(img/tick.svg);
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    list-style-type: none;
+    list-style-image: url('/img/tick.svg'); 
     line-height: 22px;
-    letter-spacing: 0px;
     text-align: left;
     color: rgba(133, 138, 143, 1);
     font-size: 25px;
@@ -280,13 +218,7 @@ button{
     margin:  0;
     height: 1056px;
     padding-top: 7%;
-    @media screen and (Max-width: 975px) {
-        padding-left: 0;
-          margin: 0;
-          width: 100%;
-          height: fit-content;
-          padding-bottom: 2rem ;
-        }
+   
 }
 .grid-container{
     margin: 8rem;
@@ -295,12 +227,7 @@ button{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-content: space-between;
-    @media screen and (Max-width: 975px) {
-      grid-template-columns: repeat(2,1fr);
-      grid-template-rows: repeat(3, 1fr);
-        width: fit-content;
-        height: fit-content;
-      }
+  
     
  }
 
@@ -314,11 +241,7 @@ button{
     height: 225px;
     width: auto;
     height: auto;
-    @media screen and (Max-width: 975px) {
-          width: fit-content;
-          height: initial;
-          display: grid;
-        }
+
 }
 .column2 .grid-container .box h1{
 
@@ -328,10 +251,7 @@ button{
     letter-spacing: 0px;
     text-align: left;
     color:  rgba(51, 51, 51, 1);
-    @media screen and (Max-width: 975px) {
-          width: fit-content;
-          height: fit-content;
-        }
+  
 }
 
 .column2 .grid-container .box p{
@@ -351,14 +271,6 @@ button{
     flex-wrap: wrap;
     margin-left: 100px;
     gap : 3rem;
-   @media screen and (Max-width: 975px) {
-    display: flex;
-    flex-direction: row;
-    font-size: x-small;
-    margin: 0px;
-    padding: 0px;
-    gap: 0.1rem;
-  }
   
 }
     
@@ -368,11 +280,14 @@ button{
     flex-direction: column;
     margin-right: 4rem; 
     padding-top: 5rem;
-    padding-left: 0rem;
-
-   
-
+    padding-left: 0rem; 
 }
+.footer-heading.footer-0{
+    width:30%;
+    height: fit-content;
+    margin-left: 0;
+
+ }
 .footer-heading p{
     font-size: 20px;
     font-weight: 500;
@@ -381,12 +296,16 @@ button{
     text-align: left;
     color:rgba(133, 138, 143, 1);
     margin-top: 0;
-    @media screen and (Max-width: 975px) {
-        font-size: small;
-       
-      }
+    width: 70%;
 
-
+}
+.flex {
+    display: flex; 
+     width: fit-content; 
+     padding-right: 0 ; 
+     width: 40%; 
+     justify-content:flex-start;
+     
 }
 .footer-heading h2{
     color:rgba(51, 51, 51, 1);
@@ -396,12 +315,9 @@ button{
     line-height: 29px;
     letter-spacing: 0px;
     text-align: left;
-    @media screen and(Max-width: 975px) {
-        font-size: small;
-        
-      }
   
 }
+
 .footer-heading a{
     color:rgba(133, 138, 143, 1);
     text-decoration: none;
@@ -411,24 +327,13 @@ button{
     line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
-    @media screen and (Max-width: 975px) {
-        font-size: small;
-        
-      }
+   
 }
 
 .footer__logo {
-    font-weight: 400;
-    text-transform: lowercase;
-    font-size: 2rem;  
+   width: 100%;
 }
-@media screen {
-    .footer-container .flex{
-        display: flex;
-        flex-direction: row;
-        gap: 0.1rem;
-    } 
-}
+
 
 
 .legal {
