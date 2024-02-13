@@ -192,20 +192,25 @@
 
 @media screen and (min-width :975px ) and ( Max-width: 1260px ){
   .text1 {
-    /* padding:0 2.5rem; */
-    font-size:6vw;
+    font-size:5vw;
     }
+  .text2{
+    font-size: 3vw;
+  }
 
  .card1, .card2{
     padding: 2rem;
     width:80%;
   }
+  .trial{
+    width: 400px;
+   }
 
   .footer-heading p{
     padding-left: 1rem;
     width: fit-content;
 }
-
+ 
 }
 
 @media screen and (max-width:850px) {
