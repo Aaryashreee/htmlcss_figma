@@ -1,5 +1,6 @@
 
-@media screen and (Max-width: 975px){
+@media screen and (Max-width: 1085px){
+
     html{
         margin:0;
         padding: 0;
@@ -69,12 +70,9 @@
     .text1 {
         padding-top: 0.4rem;
         padding-right: 0;
-        font-size: 28px;
         align-items: center; width: 100%;
-       
         }
     .text2{
-        font-size: 18px;
         font-weight: 300; 
         padding: top 0.5rem; 
         width: 100%;
@@ -82,72 +80,62 @@
     }
     .row{
         padding-left: 8vw;
+        padding-right: 8vw;
         width: auto;
         margin: 0;
-        flex-shrink: 2;
-        justify-content: space-evenly;
+        
     }
-    .column{
-        padding-top: 5vw;
-       padding-left: 0;
+   .column{
+      padding-top: 5vw;
+       margin: 0;
        margin: 0;
        width: auto;
        height: fit-content;
-       padding-bottom: 2rem ;
-       justify-content:center;
-       display: flex;
-       
-       
+      margin: 0;
+       width: auto;
+       height: fit-content;
+      padding-bottom: 2rem ;
+      gap:2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-  
-       .card1 ,.card2 {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        margin: 0;
-        padding: 1rem;
-        font-weight: 100;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-  
-      } 
+    .card1, .card2{
+      padding: 2rem;
+      width:80%;
+    }
+    .trial{
+      width: 100%;
+    }
     
         .card1 .cardtitle , .card2 .cardtitle{
-        font-size: large;
         padding: 0;
         margin: 0;
         display: flex;
-        justify-content:  center;
+        padding-top: 1rem;
+  
       } 
       .card1 .text , .card2 .text{
         padding: 0;
-          font-size: small;
+        padding-top: 1rem;
+        width: auto;
+        font-size: medium;
       }
       .card1 .para , .card2 .para{
      
         display: flex;
         align-items: center;
         padding: 0;
-        font-size: small;
+        font-size: medium;
+      
       }
       .card1 .list, .card2 .list{
-        padding-top: 0.1rem;
+        padding-top: 1rem;
         list-style-image: none;
-        list-style-type: disc;
-        font-size: small;
+        font-size: medium;
         display: inline;
         padding: 0;
         padding-bottom: 1rem;
-      } 
-      
-      .trial{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        font-size:medium;
-        margin: 0;
-        padding : 0;
-        height: fit-content;
-
       } 
     .column2{
        padding-top: 5vw;
@@ -161,9 +149,13 @@
        
     }
     .text1{
-      
+      font-size:6vw;
         margin-left: 0;
-        font-size:vw;
+        
+    }
+    .text2{
+      font-size: 4vw;
+      margin: 0;
     }
     .grid-container{
         margin: 0;
@@ -173,79 +165,51 @@
         height: fit-content;
       }
     .footer-container{
-        display: flex;
-        padding-top: 5vw;
-        padding: 1vm;
-        margin:  0.5rem;
-        width: auto;
-        height: fit-content;
-        padding-bottom: 2rem ;
-        gap:0;
+      margin-right: 5%;
+      margin-left: 5%;
     }
-    .footer-heading h1{
-
-      width: 20%;
-    }
-
-    .footer-heading{
-      padding: 1rem;
-      margin: 0;
-      display: flex;
-      align-items: flex-start;
-       align-items: flex-start;
-    }
-   .footer-heading.footer-0{
-      margin: 0;
-      width: 40%;
-
+    .footer__logo {
+      width: fit-content;
    }
+    footer img{
+      width: 100px;
+    }
+
     .footer-heading p{
-      font-size: smaller;
-      width: 100%;
+        padding-left: 1rem;
+        width: fit-content;
     }
-    .flex{
-      width: 30%;
-      margin: 0;
-      padding: 0;
-      height: 20px;
-      gap:0;
-      margin-right: 0;
-      display: flex;
-    }
-   
-    .footer-heading  h2{
-        font-size: 3.25vw;
-        margin: 0;
-       
-    }
-    .footer-heading a{
-        font-size: 2.25vw;
-        margin: 0;
-      
+    .flex img{
+      display: none;
     }
     .legal{
         margin:0;
     }
 
 }
-@media screen and (max-width:1024px) {
-  body{
-    /* background-color: aqua; */
-  }
-  .column{
-    height: fit-content;
-  }
-  .card1 , .card2 {
-    height: 100%;
-    width: fit-content;
-  }
-  
-  .trial{
-   
-    margin-right: 0; 
+
+
+
+@media screen and (min-width :975px ) and ( Max-width: 1260px ){
+  .text1 {
+    /* padding:0 2.5rem; */
+    font-size:6vw;
     }
-  .column2{
-    background-color: #ffffff;
+
+ .card1, .card2{
+    padding: 2rem;
+    width:80%;
   }
 
+  .footer-heading p{
+    padding-left: 1rem;
+    width: fit-content;
+}
+
+}
+
+@media screen and (max-width:850px) {
+  .footer-container{
+   font-size: smaller;
+  }
 }
