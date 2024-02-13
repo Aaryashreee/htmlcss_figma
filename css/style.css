@@ -6,33 +6,34 @@
 }
 
 html , body{
-    /* width: 100%; */
     padding-top: 0;
-    /* font-family: 'Inter';   */
+  
 }
 
 .nav {
     margin-left: 4rem; 
+    margin-right: 4rem; 
     justify-content: space-between;
     display: inline;
     display: flex;
     margin-top:0;
     align-items: center;
     font-size: 25px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     align-items: center;
     padding-bottom: 2rem;
 }
+
 .navitem{
     gap :2rem; 
-  
+    display: flex;
 }
 
 #logo{
     display: flex;
     align-items: center;
+    padding-top: 1rem;
 }
    
 
@@ -56,13 +57,13 @@ html , body{
 }
  
 button{
-    margin-right: 5rem;
+   
     color:rgb(255, 255, 255);
     background-color:rgba(1, 118, 255, 1);
     border-radius: 0.2rem;
     border-style: hidden;
     font-size: 20px;
-    margin-top:10px ;
+
     font-weight: bold;
     
 }
@@ -94,27 +95,23 @@ button{
 .row{
     margin-left:5rem;
     align-content: center;
-    padding-top: 8% ;
-    /* padding: 4rem 4rem 4rem 4rem; */
+    padding-top: 5% ;
     page-break-after: always;
     display: flex;
     align-content: center;
     justify-content: space-evenly;
-   
+    height: fit-content;
+    padding-bottom: 15rem ;
+    margin-right: 5rem;
 }
 
 .column{
- 
     width: 25%;
-    padding: 0 10px;
+    padding: 0 5px;
     width: 498px;
     height: 853px;
-    top: 660px;
-    left: 205px;
     display: flex;
     justify-content: space-evenly;
-    
-  
 }
 
 
@@ -122,7 +119,6 @@ button{
     margin: 10%;
     width: 90%;
     height: fit-content;
-    /* padding: 16px; */
     box-shadow:2px;
     background-color: #ffffff; 
     border-radius: 0.5rem;
@@ -134,64 +130,78 @@ button{
 }
 
 
-.card a{
+.card1 a , .card2 a{
+    height: fit-content;
     font-size: 48px;
     font-weight: 700;
     line-height: 58px;
-    letter-spacing: 0px;
+
     text-align: left;
 }
+.card1 li , .card2 li {
+    height: fit-content;
+    padding-left: 1rem; 
+    padding-bottom: 1rem; 
+}
 
-.cardtitle{
+.cardtitle  { 
     font-size: 60px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 73px;
     letter-spacing: 0px;
     text-align: left;
     color: rgba(51, 51, 51, 1);
-    padding-bottom: 2rem;
-    border-bottom: 0.1px solid  rgba(245, 246, 250, 1);
+    padding: 2rem;
+    
 
 
 }
+#cardtitle2{
+    border-bottom: 5px solid  rgba(245, 246, 250, 1);
+    width: 100%;
+    padding-bottom: 2rem;
+}
 .text{
+    padding: 2rem;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 550;
     line-height: 24px;
     text-align: left;
     display:inline-flex;
     color: rgba(133, 138, 143, 1);
+    width: 90%;
        
-    
 }
 .para{
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 550;
     line-height: 24px;
     text-align: right;
     display:inline-flex;
     color: rgba(133, 138, 143, 1);
-    
+    padding: 1rem;
     
 }
-.list{
-    padding-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap:2rem;
+.list  {
     list-style-type: none;
-    list-style-image: url('/img/tick.svg'); 
-    line-height: 22px;
-    text-align: left;
     color: rgba(133, 138, 143, 1);
     font-size: 25px;
-    font-weight:400; 
-    
+    font-weight:550; 
+    padding-top: 2rem;
+}
+.list p{
+    display: inline;
+    margin-top: 0;
+    padding: 0;
+}
+.list img{
+    display: inline;
+    margin-top: 1rem;
+
 }
 .trial{
     font-size: large;
-    width: 25rem;
-    margin-left: 25px;
+    width: 28rem;
     color:rgb(255, 255, 255);
     background: rgba(229, 241, 255, 1);
     color: rgba(55, 125, 255, 1);
@@ -205,8 +215,8 @@ button{
 }
  button:hover {
     background-color:rgba(55, 125, 255, 1) ;
-     color: #ffffff;
-      cursor: pointer; 
+    color: #ffffff;
+    cursor: pointer; 
 }
 
 .column2{
@@ -269,8 +279,10 @@ button{
     margin-top: 2rem; 
     display: flex;
     flex-wrap: wrap;
+    gap:2rem;
     margin-left: 100px;
-    gap : 3rem;
+    margin-right: 10%;
+  
   
 }
     
@@ -278,9 +290,10 @@ button{
 .footer-heading{
     display: flex;
     flex-direction: column;
-    margin-right: 4rem; 
+    /* margin-right: 4rem;  */
     padding-top: 5rem;
-    padding-left: 0rem; 
+    padding-left: 0rem;
+  
 }
 .footer-heading.footer-0{
     width:30%;
@@ -305,6 +318,7 @@ button{
      padding-right: 0 ; 
      width: 40%; 
      justify-content:flex-start;
+     gap:2rem;
      
 }
 .footer-heading h2{
@@ -337,7 +351,6 @@ button{
 
 
 .legal {
-    /* padding-left: -5rem; */
     page-break-before: always;
     padding-top: 2rem;
     padding-bottom: 4rem;
@@ -349,4 +362,3 @@ button{
     letter-spacing: 0px;
     align-items: flex-start;
 }
-
