@@ -1,5 +1,5 @@
 
-@media screen and (Max-width: 1085px){
+@media screen and (Max-width: 975px){
 
     html{
         margin:0;
@@ -32,41 +32,56 @@
     .navitem{
         display: none;
     }
-    .dropbtn {
-      margin-right: 0;
-        padding: 16px;
-        cursor: pointer;
-        background-color: #ffffff;
-        display: flex;
-        align-items: flex-end;
-        
-      }
-    .dropdown {
-        position: relative;
-        display: inline-block;
-       
-      }
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
+
     
-    .show {display: block;}
-        .dropdown a:hover {
-           background-color: #ffffff; 
+    .dropdown {
+      position: relative;
+      display: inline-block;
     }
-  
+    .dropdown button{
+      background-color: rgb(255, 255, 255);
+    }
+    
+    .dropbtn {
+      color: black;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+    
+    .dropdown-content {
+      background-color: #f1f1f1;
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      z-index: 2;
+      left:-110px
+    }
+    
+    .dropdown-content a {
+      color: #858A8F;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .head_text {
+      display: flex;
+      align-items: center;
+    }
+    
+    .arrow {
+      margin-left: auto;
+    }
     .text1 {
         padding-top: 0.4rem;
         padding-right: 0;
@@ -81,28 +96,18 @@
     .row{
         padding-left: 8vw;
         padding-right: 8vw;
-        width: auto;
         margin: 0;
         
     }
    .column{
-      padding-top: 5vw;
-       margin: 0;
-       margin: 0;
-       width: auto;
-       height: fit-content;
-      margin: 0;
-       width: auto;
-       height: fit-content;
-      padding-bottom: 2rem ;
-      gap:2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
     .card1, .card2{
       padding: 2rem;
-      width:80%;
+      margin: 0;
+      
     }
     .trial{
       width: 100%;
@@ -138,7 +143,7 @@
         padding-bottom: 1rem;
       } 
     .column2{
-       padding-top: 5vw;
+       padding-top:2rem;
        padding-left: 0;
        margin: 0;
        padding-right: 0;
@@ -149,12 +154,13 @@
        
     }
     .text1{
-      font-size:6vw;
-        margin-left: 0;
+      font-size:2rem;
+        margin:0.1rem;
+        padding: 0;
         
     }
     .text2{
-      font-size: 4vw;
+      font-size: 1rem;
       margin: 0;
     }
     .grid-container{
@@ -164,57 +170,148 @@
         width: fit-content;
         height: fit-content;
       }
-    .footer-container{
-      margin-right: 5%;
-      margin-left: 5%;
+      footer{
+        font-size: 0.55rem;
+        line-height: 1rem;
+        margin-bottom: 0;
+        gap: 0;
+        padding: 1rem;
     }
-    .footer__logo {
-      width: fit-content;
-   }
-    footer img{
-      width: 100px;
+    .footers{
+        padding-left: 1.5rem;
+        margin-top: 0rem;
+        justify-content: space-evenly;
+        column-gap: 0rem;
     }
-
-    .footer-heading p{
-        padding-left: 1rem;
-        width: fit-content;
+    .footers .footer1{
+        flex: 0 1 20%;
     }
-    .flex img{
-      display: none;
+    footer .footer1 p{
+        line-height: 0.8rem;
+        text-wrap: wrap;
     }
-    .legal{
-        margin:0;
+    footer .footer1 p br{
+        display: none;
     }
+    .footers .footer1 img{
+        width: 4.5rem;
+    }
+    .footers .footer .top{
+        font-size: 0.65rem;
+    }
+    .footer2, .footer3, .footer4,.footer5{
+        margin: 0 0.5rem;
+    }
+    .footer2 ul, .footer3 ul, .footer4 ul, .footer5 ul{
+        font-size: 0.60rem;
+        list-style: none;
+        gap: 0.5rem;
+    }
+    .footer2 ul li, .footer3 ul li, .footer4 ul li, .footer5 ul li{
+        line-height: 0.65rem;
+    }
+    .footer2,.footer3, .footer4, .footer5{
+       margin-top: 0.8rem;
+    }
+    .footers .footer .social-media{
+        gap: 0.4rem;
+    }
+    .footers .footer .social-media img{
+        width: 1.1rem;
+    }
+    .copyright {
+        margin: 1.5rem;
+    }
+    .block-scroll{
+      overflow: hidden;
+  }
+    
 
 }
 
 
 
-@media screen and (min-width :975px ) and ( Max-width: 1260px ){
-  .text1 {
-    font-size:5vw;
-    }
-  .text2{
-    font-size: 3vw;
+@media screen and (min-width :975px ) and ( Max-width: 1170px ){
+  .nav{
+    margin: 0;
   }
 
- .card1, .card2{
-    padding: 2rem;
-    width:80%;
+  .column{
+    margin: 0;
+    padding: 0;
+  }
+  .row{
+    margin: 0;
+  }
+
+  .card1{
+    width: fit-content;
+    margin-right: 0rem;
+    padding: 1rem;
+    margin-left: 2rem;
+  }
+.card2{
+    width: fit-content;
+   margin-right: 2rem;
+   padding: 1rem;
+   margin-left: 0rem;
+   
   }
   .trial{
-    width: 400px;
+    margin: 0;
+    width: 20rem;
+    padding: 0;
    }
-
-  .footer-heading p{
-    padding-left: 1rem;
-    width: fit-content;
-}
- 
-}
-
-@media screen and (max-width:850px) {
-  .footer-container{
-   font-size: smaller;
+   .column2{
+    height: fit-content;
+   }
+   .grid-container{
+    margin: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2rem;
+    height: fit-content;
   }
+
+} 
+
+@media screen and (max-width:665px) {
+  
+  .grid-container{
+    padding: 2rem;
+    margin: 2rem;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: fit-content;
+    height: fit-content;
+  }
+  .row{
+    padding: 5rem;
+  }
+  .column{
+    margin: 0;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width:555px) {
+  .text1{
+  
+    font-size: x-large;
+  }
+  .text2{
+    padding-bottom: 0.5rem;
+  }
+  .row{
+    padding-top: 0.5rem;
+  }
+    .trial{
+      font-size:medium;
+    }
+    .grid-container{
+      padding: 0;
+    }
+    .footer2 ul, .footer3 ul, .footer4 ul, .footer5 ul{
+      padding: 0;
+   }
 }

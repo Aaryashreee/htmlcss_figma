@@ -27,34 +27,23 @@
                     height: 57px;" > Get Started</button>
                 </div>
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn"><img src="img/ham.svg "height=30px></button>
+                    <button onclick="toggleDropdown()" class="dropbtn"><img src="img/ham.svg" height="30px"></button>
                     <div id="myDropdown" class="dropdown-content">
-                    <a class="head_text"> Home  <img  class="arrow" src="img/arrow.svg" > </a>
-                    <a class="head_text"> Pages <img  class="arrow" src="img/arrow.svg" >  </a> 
-                    <a class="head_text"> Blog <img  class="arrow" src="img/arrow.svg" > </a>
-                    <a class="head_text">  Portfolio <img  class="arrow" src="img/arrow.svg" >  </a>
+                        <a class="head_text">Home <img class="arrow" src="img/arrow.svg"></a>
+                        <a class="head_text">Pages <img class="arrow" src="img/arrow.svg"></a>
+                        <a class="head_text">Blog <img class="arrow" src="img/arrow.svg"></a>
+                        <a class="head_text">Portfolio <img class="arrow" src="img/arrow.svg"></a>
                     </div>
                 </div>
                 <script>
-                    /* When the user clicks on the button, 
-                    toggle between hiding and showing the dropdown content */
-                    function myFunction() {
-                      document.getElementById("myDropdown").classList.toggle("show");
-                    }
-                    
-                    // Close the dropdown if the user clicks outside of it
-                    window.onclick = function(event) {
-                      if (!event.target.matches('.dropbtn')) {
-                        var dropdowns = document.getElementsByClassName("dropdown-content");
-                        var i;
-                        for (i = 0; i < dropdowns.length; i++) {
-                          var openDropdown = dropdowns[i];
-                          if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                          }
+                    function toggleDropdown() {
+                        var dropdownContent = document.getElementById("myDropdown");
+                        if (dropdownContent.style.display === "block") {
+                          dropdownContent.style.display = "none";
+                        } else {
+                          dropdownContent.style.display = "block";
                         }
                       }
-                    }
                     </script>
         </nav>
  
@@ -75,11 +64,11 @@
                 <a class="cardtitle" id="cardtitle2">$300 
                 <p class="para">Per User / Per Year </p></a>
                     <div class="list">
-                        <li ><img src="/img/tick.svg"><p>Access to editing all blocks</li></p>
-                        <li><img src="/img/tick.svg"><p>Editing blocks together</li></p>
-                        <li><img src="/img/tick.svg"><p>Access to all premium icons</li></p>
-                        <li><img src="/img/tick.svg"><p>A dedicated domain</li></p>
-                        <li><img src="/img/tick.svg"><p>Ability to integrate with CMS</li></p>
+                        <li ><img src="img/tick.svg"><p>Access to editing all blocks</li></p>
+                        <li><img src="img/tick.svg"><p>Editing blocks together</li></p>
+                        <li><img src="img/tick.svg"><p>Access to all premium icons</li></p>
+                        <li><img src="img/tick.svg"><p>A dedicated domain</li></p>
+                        <li><img src="img/tick.svg"><p>Ability to integrate with CMS</li></p>
                     </div>
                 <button class="trial">Start 14 Days Free Trial </button>
             </div>
@@ -92,11 +81,11 @@
                 <p  class="para">Per User / Per Year
                 </p></a>
                     <div class="list">
-                        <li ><img src="/img/tick.svg">Access to editing all blocks</li>
-                        <li><img src="/img/tick.svg">Editing blocks together</li>
-                        <li><img src="/img/tick.svg">Access to all premium icons</li>
-                        <li><img src="/img/tick.svg">A dedicated domain</li>
-                        <li><img src="/img/tick.svg">Ability to integrate with CMS</li>
+                        <li ><img src="img/tick.svg">Access to editing all blocks</li>
+                        <li><img src="img/tick.svg">Editing blocks together</li>
+                        <li><img src="img/tick.svg">Access to all premium icons</li>
+                        <li><img src="img/tick.svg">A dedicated domain</li>
+                        <li><img src="img/tick.svg">Ability to integrate with CMS</li>
                     </div>
                 <button class="trial">Start 14 Days Free Trial </button>
             </div>
@@ -147,59 +136,60 @@
 
 
 
-   
-    <footer class="footer-container">
-        <div class="footer-heading footer-0"> 
-            <h1 class="footer__logo"><img src="img/bw_logo.svg"></h1>
-                      <p>  Move - Multipurpose Design
-                        Template will help you 
-                        develop your website design.
-                      </p>
-                    <div  class="flex">
-                        <img  src="img/web.svg" style="margin-right:10px">
-                        <img src="img/fb.svg"  style="margin-right:10px">
-                        <img src="img/tw.svg"  style="margin-right:10px">
-                        <img src="img/yt.svg">
-                    </div>  
-        
-        </div>
-        
-        <div class="footer-heading footer 1">
-            <h2>Home</h2>
-            <a href="#">Desktop App</a>
-            <a href="#">Mobile App</a>
-            <a href="#">Saas</a>
-            <a href="#">Event</a>
-            <a href="#">Software</a>
-        </div>
-        <div class="footer-heading footer 2">
-            <h2>Pages</h2>
-            <a href="#">About Us</a>
-            <a href="#">Careers</a>
-            <a href="#">Case Studies</a>
-            <a href="#">Pricing</a>
-        </div>
-        <div class="footer-heading footer 3">
-            <h2>Blog</h2>
-            <a href="#">Blog Listing</a>
-            <a href="#">Blog Article</a>
-            <a href="#">Newsroom</a>
-        </div>
-        <div class="footer-heading footer 4">
-            <h2>Portfolio</h2>
-            <a href="#">Portfolio</a>
-            <a href="#">Single Case</a>
-        </div>
-        
+    <footer>
+    <div class="footers">
+        <div class="footer footer1">
+            <img src="./img/bw_logo.svg" alt="" srcset="" width="">
+            <p>Move - Multipurpose Design<br> Template will help you<br> develop your website design.</p>
+            <div class="social-media">
+                <img src="./img/web.svg" alt="" srcset="">
+                <img src="./img/fb.svg" alt="" srcset="">
+                <img src="./img/tw.svg" alt="" srcset="">
+                <img src="./img/yt.svg" alt="" srcset="">
 
-</div>
-</footer>
-<footer>
-<div class="legal">
-    <p>&copy; 2019-2020 Wave Multipurpose Design Template.</p>
-</div>
-</footer>
+            </div>
+        </div>
+        <div class="footer footer2">
+            <ul>
+                <li><a href="http://" class="top">Home</a></li>
+                <li><a href="http://">Desktop App</a></li>
+                <li><a href="http://"> Mobile App</a></li>
+                <li><a href="http://"> SaaS</a></li>
+                <li><a href="http://">Event</a></li>
+                <li><a href="http://">Software</a></li>
+            </ul>
+        
+        </div>
+        <div class="footer footer3">
+            <ul>
+                <li><a href="http://" class="top">Pages</a></li>
+                <li><a href="http://">About us</a></li>
+                <li><a href="http://">Career</a></li>
+                <li><a href="http://">Case studies</a></li>
+                <li><a href="http://">Pricing</a></li>
+            </ul>
+        </div>
+        <div class="footer footer4">
+            <ul>
+                <li><a href="http://" class="top">Blog</a></li>
+                <li><a href="http://">Blog Listing</a></li>
+                <li><a href="http://">Blog Article</a></li>
+                <li><a href="http://">Newsroom</a></li>
+            </ul>
+        </div>
+        <div class="footer footer5">
+            <ul>
+                <li><a href="http://" class="top">Portfolio</a></li>
+                <li><a href="http://">Portfolio</a></li>
+                <li><a href="http://">Single Case</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2019-2020 Wave Multipurpose Design Template.</p>
+    </div>
 
+</footer>
    
 </body>
 </html>
